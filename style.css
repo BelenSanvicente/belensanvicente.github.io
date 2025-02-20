@@ -10,11 +10,18 @@ body {
 .profile {
     text-align: center;
     margin-top: 20px;
+    background-image: url('back2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-radius: 7px;
 }
 
 .profile img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 5px solid #2db2ff;
     object-fit: cover;
@@ -22,42 +29,14 @@ body {
 }
 
 .profile h1 {
-    font-size:xx-larger;
+    font-size: x-large;
     color: #031633;
     font-weight: 700;
 }
 
-.profile p {
-    font-size: 18px;
-    margin-top: -5px;
+.profile p, .profile a {
+    font-size: 16px;
 }
-
-.profile a {
-    font-size: 18px;
-    color: #0277bd;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.profile a:hover {
-    color: #01579b;
-    text-decoration: underline;
-}
-
-
-.profile {
-    background-image: url('back2.png'); /* Cambia 'fondo.jpg' por la imagen que desees */
-    background-size: cover;  /* Asegura que la imagen cubra todo el espacio */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    text-align: center; /* Centra el contenido */
-    padding: 50px 20px; /* Espaciado interno */
-    background-color: #ffffff; /* Asegura que el texto sea legible */
-    border-radius: 7px; /* Opcional: esquinas redondeadas */
-}
-
-
 
 /* ======= MENÚ DE NAVEGACIÓN ======= */
 nav {
@@ -65,51 +44,43 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #727272;
-    padding: 20px;
+    padding: 15px;
     border-radius: 7px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 20px;
     background-color: #685a0b;
-    transition: background 0.3s, color 0.3s;
-    
+    transition: background 0.3s;
 }
 
 nav ul li a:hover {
     background-color: rgb(170, 170, 170);
-    color: white;
 }
 
-/* ======= MENÚ ======= */
 .menu-toggle {
     display: none;
     font-size: 30px;
     cursor: pointer;
     color: white;
-    background: none;
-    border: none;
 }
 
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .menu-toggle {
@@ -119,105 +90,61 @@ nav ul li a:hover {
     nav ul {
         display: none;
         flex-direction: column;
-        width: 100%;
-        padding-top: 10px;
     }
 
     nav ul.show {
         display: flex;
     }
-
-    nav ul li {
-        margin: 10px 0;
-    }
 }
-
-/* ======= BOTÓN DE IDIOMA ======= */
-/* Botón de idioma */
-#language-toggle {
-    position: fixed; /* Fijado en la pantalla */
-    top: 15px;
-    right: 15px;
-    background-color: #1400c4;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 20px;
-    transition: background 0.3s;
-    z-index: 1000; /* Asegura que esté encima de otros elementos */
-}
-
-#language-toggle:hover {
-    background-color: rgb(170, 170, 170);
-}
-
 
 /* ======= SECCIONES ======= */
 section {
-    padding: 50px 20px;
-    border-bottom: 3px solid white;
+    padding: 40px 15px;
     text-align: center;
-}
-
-#about {color: #ffffff; background-color: #000000; border-radius: 15px; }
-#news {color: #000000; background-color: #ffffff; border-radius: 15px;}
-#projects {color: #ffffff; background-color: #685a0b; border-radius: 7px;}
-#contact {background-color: #fcfcfc; border-radius: 7px;}
-
-h2 {
-    font-size: x-large;
-    font-weight: bold;
 }
 
 #news {
-    background-color: #ffffff; /* Fondo de la sección */
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#news-title {
-    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
 }
 
 .news-container {
     display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .news-item {
     background-color: #727272;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(78, 78, 78, 0.2);
-    width: 45%;
-    display: flex; /* Alinea imagen y texto en la misma fila */
-    align-items: center; /* Centra verticalmente */
-    gap: 15px; /* Espacio entre imagen y texto */
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .news-item img {
-    width: 160px; /* Ajusta el tamaño de la imagen */
+    width: 100%;
+    max-width: 160px;
     height: 160px;
-    object-fit: cover; /* Recorta y ajusta la imagen */
+    object-fit: cover;
     border-radius: 8px;
-    border: 5px solid  #ffffff;
+    border: 5px solid #ffffff;
 }
 
 .news-content {
-    flex: 1; /* Ocupa el espacio restante */
     text-align: justify;
 }
-
 
 /* ======= CARRUSEL ======= */
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Ajusta el tamaño máximo del carrusel */
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -230,181 +157,81 @@ h2 {
 }
 
 .carousel-slide {
-    display: flex; /* Divide en dos columnas */
-    flex-direction: row; /* Asegura que la imagen y el texto estén en fila */
-    align-items: center; /* Alinea verticalmente */
-    justify-content: space-between; /* Espacia las columnas */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     min-width: 100%;
-    box-sizing: border-box;
     padding: 20px;
-    background: #685a0b; /* Fondo oscuro */
+    background: #685a0b;
     border-radius: 10px;
-    gap: 20px; /* Espaciado entre columnas */
+    gap: 20px;
 }
 
-/* Columna de imagen */
 .carousel-slide img {
-    width: 40%; /* Ajusta el tamaño de la imagen */
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* Columna de texto */
 .text-container {
-    width: 55%; /* Espacio para la descripción */
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    color: white;
-}
-
-#project1-text, #project2-text, #project3-text, #project4-text {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: black;
-    padding: 10px;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
-}
-
-#project1-des, #project2-des, #project3-des, #project4-des {
-    font-size: 16px;
-    background-color: black;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: justify;
-}
-
-/* Botones de navegación */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
     color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 50%;
 }
 
-.prev {
-    left: 10px;
-}
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.next {
-    right: 10px;
-}
+    .carousel-slide img {
+        width: 90%;
+    }
 
-.carousel-btn:hover {
-    background: rgba(255, 255, 255, 0.7);
-    color: black;
-}
-
-
-/* Botones del carrusel */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgb(0, 0, 0);
-    color: white;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 50%;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-/* Ajustes en móviles */
-@media (max-width: 600px) {
-    .carousel-container {
-        max-width: 90%;
+    .text-container {
+        width: 100%;
     }
 }
 
 /* ======= PROYECTOS ======= */
 .project-grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
 
 .project {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: justify;
     transition: transform 0.3s ease-in-out;
-    position: relative;
-    
 }
-
 
 .project:hover {
     transform: scale(1.05);
 }
 
 .project img {
-    width: 40px;
-    height: 350px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 10px;
-    margin-right: 15px;
 }
 
-.project .description {
-    display: none;
-    position: absolute;
-    left: 420px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: justify;
-}
-
-.project:hover .description {
-    display: block;
-}
-
-/* Ajustes en móviles */
-@media (max-width: 768px) {
-    .project {
-        width: 100%;
-        flex-direction: column;
-        text-align: justify;
-    }
-
-    .project img {
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-
-    .project .description {
-        position: static;
-        width: auto;
-        display: block;
-        margin-top: 10px;
+@media (max-width: 600px) {
+    .carousel-container {
+        max-width: 90%;
     }
 }
-
