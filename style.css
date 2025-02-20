@@ -1,237 +1,141 @@
-/* ======= GLOBAL ======= */
+/* Importar fuente */
 body {
-    font-family: "Poppins", serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* ======= PERFIL ======= */
-.profile {
+/* Estilos del encabezado */
+header {
+    background: #003366;
+    color: white;
     text-align: center;
-    margin-top: 20px;
-    background-image: url('back2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 50px 20px;
-    background-color: #ffffff;
-    border-radius: 7px;
+    padding: 20px 0;
 }
 
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #2db2ff;
-    object-fit: cover;
-    margin-bottom: 3px;
-}
-
-.profile h1 {
-    font-size: x-large;
-    color: #031633;
-    font-weight: 700;
-}
-
-.profile p, .profile a {
-    font-size: 16px;
-}
-
-/* ======= MENÚ DE NAVEGACIÓN ======= */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #727272;
-    padding: 15px;
-    border-radius: 7px;
-}
-
+/* Navegación */
 nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
 
 nav ul li {
-    margin-right: 10px;
+    display: inline;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 20px;
-    background-color: #685a0b;
-    transition: background 0.3s;
+    font-weight: 500;
+    padding: 10px;
 }
 
-nav ul li a:hover {
-    background-color: rgb(170, 170, 170);
+/* Imagen de perfil */
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 15px;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
+/* Sección general */
+.section-button {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* Contenedor del proyecto */
+.project-container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Imagen del proyecto */
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Texto del proyecto */
+.project-text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Responsividad */
 @media (max-width: 768px) {
-    nav {
+    nav ul {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .section-button {
+        padding: 20px; /* Reduce el padding en pantallas pequeñas */
     }
 
-    .menu-toggle {
-        display: block;
+    .project-container {
+        padding: 15px; /* Ajuste para mejor visibilidad */
+    }
+
+    .project-text {
+        font-size: 16px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+
+    .project-image {
+        max-width: 100%; /* Asegura que la imagen se ajuste bien */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
     }
 
     nav ul {
-        display: none;
-        flex-direction: column;
+        gap: 10px;
     }
 
-    nav ul.show {
-        display: flex;
-    }
-}
-
-/* ======= SECCIONES ======= */
-section {
-    padding: 40px 15px;
-    text-align: center;
-}
-
-#news {
-    background-color: #ffffff;
-    border-radius: 15px;
-}
-
-.news-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.news-item {
-    background-color: #727272;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(78, 78, 78, 0.2);
-    width: 90%;
-    max-width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.news-item img {
-    width: 100%;
-    max-width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 5px solid #ffffff;
-}
-
-.news-content {
-    text-align: justify;
-}
-
-/* ======= CARRUSEL ======= */
-.carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.carousel {
-    display: flex;
-    transition: transform 1s ease-in-out;
-}
-
-.carousel-slide {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 100%;
-    padding: 20px;
-    background: #685a0b;
-    border-radius: 10px;
-    gap: 20px;
-}
-
-.carousel-slide img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.text-container {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .carousel-slide {
-        flex-direction: column;
-        text-align: center;
+    h2 {
+        font-size: 22px;
     }
 
-    .carousel-slide img {
-        width: 90%;
+    .project-text {
+        font-size: 15px;
+        line-height: 1.5;
     }
 
-    .text-container {
-        width: 100%;
-    }
-}
-
-/* ======= PROYECTOS ======= */
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: justify;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project:hover {
-    transform: scale(1.05);
-}
-
-.project img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-    .carousel-container {
-        max-width: 90%;
+    .project-container {
+        padding: 10px;
     }
 }
