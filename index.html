@@ -1,187 +1,387 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil del Científico</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Ana Belen Sanvicente">
+    <meta name="description" content="Portafolio de Ana Belen Sanvicente">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, R, Python, Julia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Ana Belen Sanvicente | Mis proyectos</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/LogoBelen.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a id="nav-about" href="#about">Sobre Mí</a></li>
-                <li><a id="nav-news" href="#news">Novedades</a></li>
-                <li><a id="nav-projects" href="#projects">Proyectos</a></li>
-                <li><a id="nav-contact" href="#contact">Contacto</a></li>
-                <li><a id="cv-link" href="cv.pdf" target="_blank">CV</a></li>
-                <li><a id="pub" href="pub.pdf" target="_blank">Publicaciones</a></li>
-                <li><button id="language-toggle">ENGLISH</button></li>
-            </ul>
-        </nav>
-        <div class="profile">
-            <img src="foto.jpg" alt="Foto de perfil">
-            <h1 id="title">Raúl Esquivel Sirvent</h1>
-            <p><a id="institution" href="https://www.fisica.unam.mx" target="_blank">Instituto de Física, UNAM</a></p>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand">
+            <img src="imagenes/LogoBelen.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </header>
-    
-    <section id="about" class="section-button">
-        <h2 id="about-title">Sobre Mí</h2>
-        <p id="about-text">Investigador Titular C en el Departamento de Física Química enfocado en diversos temas, principalmente en:</p>
-        <ul id="about-list">
-            <li id="topic1">Efecto Casimir</li>
-            <li id="topic2">Transferencia Radiativa de Calor</li>
-            <li id="topic3">Ondas de Calor</li>
-            <li id="topic4">Propagación de ondas en general</li>
-        </ul>
-    </section>
-    
+      </div>
+    </nav>
 
-    <section id="news" class="section-button"> 
-        <h2 id="news-title">Reciente</h2>
-        <div class="news-container">
-            <!-- Primera noticia -->
-            <div class="news-item">
-                <img src="us1.png" alt="Ultrasonido Médico">
-                <div class="news-content">
-                    <h3 id="news1-title">ULTRASONIDO MÉDICO CUANTITATIVO</h3>
-                    <p id="news1-text">En colaboración con el Dr. Iván Rosado de la U. de Wisconsin tenemos un proyecto de ultrasonido médico cuantitativo con aplicaciones en cáncer de mama y en problemas de desarrollo pulmonar fetal.</p>
-                </div>
-            </div>
-    
-            <!-- Segunda noticia -->
-            <div class="news-item"> <!-- Se agrega la clase news-item -->
-                <img src="us2.png" alt="Ultrasonido Médico">
-                <div class="news-content">
-                    <h3 id="news2-title">Eventos</h3>
-                    <p id="news2-text">
-                        XI Conferencia Internacional de superficies, materiales y vacío
-                        <a href="https://www.smctsm.org.mx/XI_ICSMV/symposia/simulation.php" target="_blank" class="news-link">Más información aquí</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/fotoBelen.jpg">
+        <h1>Belen Sanvicente</h1>
+        <!--<h2>Desarrollo sitios web y hago proyectos de computo científico, proyectos de neurociencia y de programación.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/LogoBelen.png"  alt="Logo de la página">
+      </div>
     </section>
-    
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conóceme</h2>
+        <p class="seccion-texto">Actualmente estudio los últimos semestres de Física Biomédica en la UNAM. Soy programadora en Python y estoy aprendiendo R, Julia, JS, HTML y CSS. Desarrollo páginas web gracias a Tecnolochicas PRO. Me intereso en el área de salud, la eduación y la tecnología.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Construyo sitios web adaptables y atractivos.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Orientadora y divulgadora</p>
+            <p>Comparto contenido de la carrera de Física Biomédica o convocatorias útiles para enriquecer tu formación académica o personal.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Stories (en mi FB e IG)</span>
+              <span class="badge text-bg-primary">Infografías</span>
+              <span class="badge text-bg-primary">Info. de Congresos</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p> <!-- ACTUALIZAR SEMESTRE-->
+            <p>Soy estudiante de sexto semestre de la carrera de Física Biomédica en la UNAM.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Material útil</span>
+              <span class="badge text-bg-primary">Biostadística</span>
+              <span class="badge text-bg-primary">Python</span>
+              <span class="badge text-bg-primary">Física, Cómputo Científico y Matemáticas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion"> Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/clonaciongoogle.jpg" alt="Clonación de Google">
+              <div class="overlay">
+                <p>1. Clonación Interfaz de Google</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/BelenSanvicente/clonacion_google" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://belensanvicente.netlify.app/">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/3 - copia.jpg" alt="Proyecto 2">
+              <div class="overlay">
+                <p>2. Modelo Neuronal Favorito</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/BelenSanvicente/Modelo-Neuronal-de-Hindmarsh-Rose">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/python.png" alt="Proyecto 3">
+              <div class="overlay">
+                <p>3. Notas para Introducción a Python</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/BelenSanvicente/Operadores-Python" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/BelenSanvicente/Ciclos-en-Python" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/BelenSanvicente/Condicionales-y-Control-de-Flujo-Python" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/BelenSanvicente/Fractal-Triangulo-de-Sierpinski" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/titulo.png" alt="Proyecto 4">
+              <div class="overlay">
+                <p>4. Mi primer Slider.</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/BelenSanvicente/Tips-Programacion-Principiantes" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://programaciontips.netlify.app/">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/Edad Ósea Un ejemplo de Bioestadística con R.png" alt="Proyecto 5">
+              <div class="overlay">
+                <p>5. Estadística en muestras grandes</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/BelenSanvicente/Muestras-Estadistica-en-R-de-Edades-oseas" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://estadisticareo.netlify.app/">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto6.png" alt="Proyecto 6">
+              <div class="overlay">
+                <p>6. Proyectos de Física Computacional</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/BelenSanvicente/Resolucion-Numerica-Derivadas-Integrales-EDOs">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/BelenSanvicente/Ecuacion-de-movimiento-pelota/tree/main">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Proyecto 7 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto7.png" alt="Proyecto 7">
+              <div class="overlay">
+                <p>7. Infografías atractivas de enfermedades</p>
+                <div class="iconos-contenedor">
+                  <a href="https://colitisnerviosa.netlify.app">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                  <a href="https://palancascuerpohumano.netlify.app">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                  <a href="https://hipotension.netlify.app">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                  <a href="https://epilepsia.netlify.app">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a href="https://github.com/BelenSanvicente">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+
   
-    
-    <section id="projects" class="section-button">
-        <h2 id="projects-title">Proyectos</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="TOC.jpg" alt="Efecto Casimir" class="project-image">
-                <h3>EFECTO CASIMIR</h3>
-                <p>Las fluctuaciones cuánticas y térmicas dan lugar a la fuerza de Casimir. Mi investigación se ha centrado en la fuerza de Casimir entre materiales reales...</p>
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis colegas...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/fotodenancy.jpg" alt="Foto de Nancy">
+              <p class="testimonio-texto">Ana Belen demostró ser una estudiante bastante comprometida con su formación como programadora web. Desarrollo habilidades técnicas en corto tiempo y sin duda volvería a trabajar con ella</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nancy Salazar</p>
+                <p class="cargo">Instructora en TecnolochicasPro</p>
+              </div>
             </div>
-            <div class="project-item">
-                <img src="mem.png" alt="MEMS Y NEMS" class="project-image">
-                <h3>MEMS Y NEMS</h3>
-                <p>Los sistemas micro y nano electromecánicos pueden activarse mediante diferencias de potencial. Sin embargo, la fuerza de Casimir puede influir en las propiedades dinámicas...</p>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.jpg" alt="Foto de Mireya">
+              <p class="testimonio-texto">Ana Belen es una estudiante apasionada por el desarrollo web. Su trabajo en HTML y CSS demuestra un gran compromiso y atención al detalle. Recomiendo trabajar con ella ya que su habilidad y entusiasmo son contagiosos.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Mireya Mascorro Delgado</p>
+                <p class="cargo">Ing. en Telecomunicaciones, Sistemas y Electrónica</p>
+              </div>
             </div>
-            <div class="project-item">
-                <img src="nf.png" alt="Transferencia de Calor de Campo Cercano" class="project-image">
-                <h3>TRANSFERENCIA DE CALOR DE CAMPO CERCANO</h3>
-                <p>Informamos por primera vez de la existencia de resonancias de Fano en la transferencia de calor radiativa espectral de campo cercano...</p>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente4.jpg" alt="Foto de Elsa">
+              <p class="testimonio-texto">Ana Belen es atenta y creativa, disfruté estar con ella en los cursos que tuvimos en Tecnolochicas PRO. Demuestra interés, potencial y un gran compromiso en su trabajo como programadora web. Sin duda alguna recomiendo trabajar con ella.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Elsa Bryseida Reyes Hernández</p>
+                <p class="cargo">Asisente del Bootcamp de TecnolochicasPro</p>
+              </div>
             </div>
-            <div class="project-item">
-                <img src="ph.png" alt="Plasmónicos" class="project-image">
-                <h3>PLASMÓNICOS</h3>
-                <p>Hemos trabajado en aplicaciones de teorías de medios efectivos a la plasmónica en un intento de simplificar los cálculos de estos sistemas...</p>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.jpg" alt="Foto de Ana Laura">
+              <p class="testimonio-texto">Ana Belen es una estudiante dedicada y entusiasta. </p>
+              <div class="testimonio-info">
+                <p class="cliente">Ana Laura Cruz Rivera</p>
+                <p class="cargo">Ing. en Sistemas Computacionales</p>
+              </div>
             </div>
+
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame en mis redes sociales o vía e-mail:
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:belen_sanvicente@ciencias.unam.mx">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     
-    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/LogoBelen.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Si lo imagino, lo puedo programar {💗}</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/BelenSanvicente">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="http://www.linkedin.com/in/ana-belen-sanvicente">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/anabelen.sanvicentemendez/">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/belensanvicentem/" >
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:belen_sanvicente@ciencias.unam.mx">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Ana Belen (2023) &#169;</div> 
+      <a href="https://drive.google.com/file/d/17fHO-0CIoTgR5EamPL7UfDCoh2VyEbWc/view?usp=sharing">Link a mi CV
+      </a>
+    </footer>
 
-    <section id="contact" class="section-button">
-        <h2 id="contact-title">Contacto</h2>
-        <p id="contact-text">Dirección: Circuito de la Investigación S/N Cd. Universitaria , México 01000. Email: sirventr@gmail.com</p>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-    <script>
-        const translations = {
-            "ESPAÑOL": {
-                "title": "Raúl Esquivel Sirvent",
-                "institution": "Institute of Physics, UNAM",
-                "nav-about": "About Me",
-                "nav-news": "New",
-                "nav-projects": "Projects",
-                "nav-contact": "Contact",
-                "cv-link": "CV",
-                "pub": "Publications",
-                "about-title": "About Me",
-                "about-text": "I am researcher at the Institute of Physics in the Dept. of Physical Chemistry working mainly in Casimir effect, Near Field Radiative Heat Transfer, Heat Waves and Wave propagation. ",
-                "topic1": "Casimir Effect",
-                "topic2": "Near Field Radiative Heat Transfer",
-                "topic3": "Heat Waves",
-                "topic4": "Wave Propagation in general",
-                "news-title": "New Project",
-                "news1-title": "QUANTITATIVE MEDICAL ULTRASOUND",
-                "news1-text": "In collaboration with Prof. Ivan Rosado from the University of Wisconsin we have an ongoing project on medical ultrasound with applications to breast cancer and prenatal lung development.",
-                "news2-title": "Events",
-                "news2-text": "XI International Conference on Surfaces, Materials and Vacuum",
-                "projects-title": "Projects",
-                "project1-text": "CASIMIR EFECT",
-                "project1-des": "Quantum and thermal fluctuations give rise to the Casimir force. My research has focused on the Casimir force between real materials where we have tackled problems involving the role of non locality, tuning of Casimir forces using external magnetic fields, Casimir effect in liquid metals and recently the role of strong electronic correlation in the Casimir energy. Van der Waals forces in self assembly have also been a topic of our work. We are also interested in near field radiative heat transfer at the nanoscale and its modulation using metamaterials. The Casimir effect and the near field heat transfer have the same basis: Rytov's theory of fluctuating fields. In particular I am working on near field radiative heat transfer and heat transport at the nanoscale.",
-                "project2-text": "MEMS and NEMS",
-                "project2-des": "Micro and Nano electromechanical systems can be actuated by potential differences. However Casimir force can influence the dynamical properties and in particular change the stability condition known as jump to contact or snap down. The influence of the Casimir force, ways to reduce it using magnetic fields and aerogels has been a topic of interest. We have consider also actuation using acoustic noise. We are also are studying autonomous devices operated only by chemical changes such as salinity, temperature and concentration of surfactants.",
-                "project3-text": "NEAR FIELD HEAT TRANSFER",
-                "project3-des": "We reported for the first time the existence of Fano resonances in the spectral near-field radiative heat transfer by combining metallic and polaritonic materials. By tuning the plasma frequency of the metal to the longitudinal phonon frequency of the polaritonic material. Extensions of this work, we introduced the concept of thermal band-gaps. Similarly, we are interested is the use of mesoporous materials, in particular metals, to control the radiative heat transfer. We are working on the use of 2D material superlattices to control the heat transfer at the nanoscale.",
-                "project4-text": "PLASMONICS",
-                "project4-des":"We have worked in applications of effective medium theories to plasmonics in an attempt to simplify the calculations of these systems. The methodology has been applied to 3D arrays of ellipsoidal nanoparticles with a dna scaffolding and to the calculation of the plasmonic response of nested nanoparticles with arbitrary shape. Connections of this results to other projects in near-field heat transfer are also being studied.",
-                "contact-title": "Contact",
-                "contact-text": "Adress: Circuito de la Investigación S/N Cd. Universitaria , México 01000. Email: sirventr@gmail.com"
-            },
-            "ENGLISH": {
-                "title": "Raúl Esquivel Sirvent",
-                "institution": "Instituto de Física, UNAM",
-                "nav-about": "Sobre Mí",
-                "nav-news": "Reciente",
-                "nav-projects": "Proyectos",
-                "nav-contact": "Contacto",
-                "cv-link": "CV",
-                "pub": "Publicaciones",
-                "about-title": "Sobre Mí",
-                "about-text": "Investigador Titular C en el Departamento de Física Química enfocado en diversos temas, principalmente en: Efecto Casimir, Transferencia Radiativa de Calor, Ondas de Calor y Propagación de ondas en general.",
-                "topic1": "Efecto Casimir",
-                "topic2": "Transferencia Radiativa de Calor",
-                "topic3": "Ondas de Calor",
-                "topic4": "Propagación de ondas en general",
-                "news-title": "Reciente",
-                "news1-title": "ULTRASONIDO MÉDICO CUANTITATIVO",
-                "news1-text": "En colaboración con el Dr. Iván Rosado de la U. de Wisconsin tenemos un proyecto de ultrasonido médico cuantitativo con aplicaciones en cáncer de mama y en problemas de desarrollo pulmonar fetal. ",
-                "news2-title": "Eventos",
-                "news2-text": "XI Conferencia Internacional de superficies, materiales y vacío",
-                "projects-title": "Proyectos",
-                "project1-text": "EFECTO CASIMIR",
-                "project1-des": "Las fluctuaciones cuánticas y térmicas dan lugar a la fuerza de Casimir. Mi investigación se ha centrado en la fuerza de Casimir entre materiales reales, donde hemos abordado problemas relacionados con el papel de la no localidad, la sintonización de las fuerzas de Casimir utilizando campos magnéticos externos, el efecto Casimir en metales líquidos y recientemente el papel de la fuerte correlación electrónica en la energía de Casimir. Las fuerzas de Van der Waals en el autoensamblaje también han sido un tema de nuestro trabajo. También estamos interesados ​​en la transferencia de calor radiativo de campo cercano a nanoescala y su modulación mediante metamateriales. El efecto Casimir y la transferencia de calor de campo cercano tienen la misma base: la teoría de los campos fluctuantes de Rytov. En particular, estoy trabajando en la transferencia de calor radiativo de campo cercano y el transporte de calor a nanoescala.",
-                "project2-text": "MEMS y NEMS",
-                "project2-des": "Los sistemas micro y nano electromecánicos pueden activarse mediante diferencias de potencial. Sin embargo, la fuerza de Casimir puede influir en las propiedades dinámicas y, en particular, cambiar la condición de estabilidad conocida como salto al contacto o chasquido. La influencia de la fuerza de Casimir y las formas de reducirla mediante campos magnéticos y aerogeles han sido un tema de interés. Hemos considerado también la actuación mediante ruido acústico. También estamos estudiando dispositivos autónomos que funcionan únicamente mediante cambios químicos como salinidad, temperatura y concentración de tensioactivos.",
-                "project3-text": "TRANSFERENCIA DE CALOR DE CAMPO CERCANO",
-                "project3-des": "Informamos por primera vez de la existencia de resonancias de Fano en la transferencia de calor radiativa espectral de campo cercano mediante la combinación de materiales metálicos y polaritónicos. Sintonizando la frecuencia del plasma del metal con la frecuencia del fonón longitudinal del material polaritónico. Ampliaciones de este trabajo, introdujimos el concepto de bandas prohibidas térmicas. Del mismo modo, nos interesa el uso de materiales mesoporosos, en particular metales, para controlar la transferencia de calor por radiación. Estamos trabajando en el uso de superredes de materiales 2D para controlar la transferencia de calor a nanoescala.",
-                "project4-text": "PLASMÓNICOS",
-                "project4-des": "Hemos trabajado en aplicaciones de teorías de medios efectivos a la plasmónica en un intento de simplificar los cálculos de estos sistemas. La metodología se ha aplicado a matrices tridimensionales de nanopartículas elipsoidales con una estructura de ADN y al cálculo de la respuesta plasmónica de nanopartículas anidadas con forma arbitraria. También se están estudiando las conexiones de estos resultados con otros proyectos de transferencia de calor de campo cercano.",
-                "contact-title": "Contacto",
-                "contact-text": "Dirección: Circuito de la Investigación S/N Cd. Universitaria , México 01000. Email: sirventr@gmail.com"
-            }
-        };
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
 
-        document.getElementById("language-toggle").addEventListener("click", function() {
-            let lang = this.innerText === "ENGLISH" ? "ESPAÑOL" : "ENGLISH";
-            this.innerText = lang;
-            Object.keys(translations[lang]).forEach(id => {
-                if (id === "institution") {
-                    document.getElementById(id).innerText = translations[lang][id];
-                } else {
-                    document.getElementById(id).innerHTML = translations[lang][id];
-                }
-            });
-        });
-    </script>
-</body>
+  </body>
 </html>
