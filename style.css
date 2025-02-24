@@ -1,141 +1,434 @@
-/* Importar fuente */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #ffd208;
+  color:#280838;
+  font-family: 'Sunflower', sans-serif;
 }
 
-/* Estilos del encabezado */
-header {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
 }
 
-/* Navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-nav ul li {
-    display: inline;
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Rubik Dirt', cursive;
+  color:#280838;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 10px;
+.seccion-oscura {
+  color: white;
+  background-color:#280838;
 }
 
-/* Imagen de perfil */
-.profile img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-top: 15px;
+.seccion-clara {
+  color: #280838;
+  background-color: rgb(255, 255, 255);
 }
 
-/* Sección general */
-.section-button {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 20px;
+.seccion-titulo {
+  font-size: 2.5rem;
+  padding: 15px 0;
+  font-family: 'Rubik Dirt', cursive;
 }
 
-h2 {
-    color: #003366;
-    border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
-    text-align: center;
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color:#280838;
+  font-family: 'Sunflower', sans-serif;
 }
 
-/* Contenedor del proyecto */
-.project-container {
-    display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center;
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 20px;
+
+
+
+.seccion-texto {
+  font-size: 1.5rem;
+  font-family: 'Sunflower', sans-serif;
+  
 }
 
-/* Imagen del proyecto */
-.project-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  color: white;
+  background-color: #280838;
+  font-family: 'Sunflower', sans-serif;
 }
 
-/* Texto del proyecto */
-.project-text {
-    text-align: justify;
+.texto-negro {
+  color: #280838;
+  font-family: 'Sunflower', sans-serif;
+}
+
+
+.texto-blanco {
+  color: white;
+  font-family: 'Sunflower', sans-serif;
+}
+
+/* Seccion Hero */
+
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+}
+
+
+
+/* Sobre mi */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Sunflower', sans-serif;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #280838;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #280838;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.experiencia i {
+  font-size: 2.6rem;
+  color: #ffd208;
+  background-color: #280838;
+  padding: 8px 19px;
+  border-radius: 50%;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'Sunflower', sans-serif;
+}
+
+
+.badge {
+  margin: 5px; 
+}
+
+
+
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: #280838;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Sunflower', sans-serif;
+  color: #280838;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color:#0e69f1;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #ffd208;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: #280838;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+  
+}
+
+.contacto button:hover i {
+  color: #280838;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid #280838;
+}
+
+.iconos-redes-sociales a:hover i {
+  color:#280838;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+  font-family: 'Sunflower', sans-serif;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
     font-size: 18px;
-    line-height: 1.6;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .section-button {
-        padding: 20px; /* Reduce el padding en pantallas pequeñas */
-    }
-
-    .project-container {
-        padding: 15px; /* Ajuste para mejor visibilidad */
-    }
-
-    .project-text {
-        font-size: 16px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-    }
-
-    .project-image {
-        max-width: 100%; /* Asegura que la imagen se ajuste bien */
-    }
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 15px 0;
-    }
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
 
-    nav ul {
-        gap: 10px;
-    }
+  .testimonio-texto {
+    font-size: 18px;
+    color: #280838;
+  }
+}
 
-    h2 {
-        font-size: 22px;
-    }
-
-    .project-text {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .project-container {
-        padding: 10px;
-    }
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
 }
