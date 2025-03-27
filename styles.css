@@ -314,7 +314,7 @@ nav ul {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-    margin: 0; /* Eliminar márgenes para que queden más compactos */
+    margin:10px; /* Eliminar márgenes para que queden más compactos */
     width: auto;
     max-width: 150px; /* Reducir el tamaño para que ocupen menos espacio */
 }
@@ -333,9 +333,9 @@ nav ul {
     }
 
     #cv-link, #language-toggle {
-        font-size: 12px;
-        padding: 6px 10px;
-        max-width: 120px; /* Reducir aún más el tamaño */
+        font-size: 14px;
+        padding: 6px auto;
+        max-width: 130px; /* Reducir aún más el tamaño */
     }
 }
 
