@@ -301,9 +301,8 @@ button:hover {
 
     
 
-    /* Mostrar solo los botones de CV e Idioma */
     #cv-link, #language-toggle, #nav-contact {
-        display: block; /* Asegurarse de que solo estos botones estén visibles */
+        display: inline-block; /* Los botones estarán en una línea */
         font-size: 14px;
         padding: 15px 15px;
         background-color: #0c4b8a;
@@ -311,9 +310,17 @@ button:hover {
         text-decoration: none;
         border-radius: 5px;
         text-align: center;
-        margin: 10px auto;
-        
+        margin: 10px; /* Espaciado entre los botones */
+        width: auto; /* Evitar que los botones se expandan demasiado */
     }
+    
+    /* Responsividad para pantallas pequeñas (menos de 400px) */
+    @media screen and (max-width: 400px) {
+        /* Alineación de los botones en una sola fila */
+        #cv-link, #language-toggle, #nav-contact {
+            width: 45%; /* Ajuste del ancho para caber en una sola línea */
+            margin: 10px 2.5%; /* Espacio entre los botones */
+        }
 
     
 }
@@ -363,17 +370,5 @@ button:hover {
 
     
 
-    /* Mostrar solo los botones de CV e Idioma */
-    #cv-link, #language-toggle, #nav-contact {
-        display: block; /* Asegurarse de que solo estos botones estén visibles */
-        font-size: 14px;
-        padding: 15px 15px;
-        background-color: #0c4b8a;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        text-align: center;
-        margin: 10px auto;
-        display: inline-block;
-    }
+    
 }
