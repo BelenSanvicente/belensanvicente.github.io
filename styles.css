@@ -305,25 +305,17 @@ button:hover {
     
 
     /* Estilos para los botones de CV, Idioma y Contacto */
-    #cv-link, #language-toggle { 
-        display: inline-block; /* Los botones se mostrarán en línea (horizontalmente) */
+    #cv-link, #language-toggle {
+        display: block; /* Asegurarse de que solo estos botones estén visibles */
         font-size: 14px;
-        padding: 10px 15px; /* Asegurando un padding adecuado para que el texto no quede pegado */
+        padding: 10px 15px;
         background-color: #0c4b8a;
         color: white;
         text-decoration: none;
         border-radius: 5px;
         text-align: center;
-        margin: 10px 5px; /* Espacio entre los botones, puede ajustarse si es necesario */
-        width: auto; /* Permite que los botones se ajusten al contenido */
-        max-width: 250px; /* Para evitar que los botones se vuelvan demasiado grandes */
-        gap: 5px;
-}
-
-/* Efecto hover para los botones */
-    #cv-link:hover, #language-toggle:hover{
-        background-color: #154f8a;
-}
+        margin: 10px auto;
+    }
 
 
 }
