@@ -3,13 +3,13 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#003366;
+    background: linear-gradient(135deg, #003366, #0055a4);
     color: #333;
 }
 
 /* Estilos del encabezado */
 header {
-    background: #003366;
+    
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -18,7 +18,7 @@ header {
 /* idioma */
 
 #language-toggle {
-    background-color:  #f39c12;/* Color azul */
+    background-color:  #1273f3;/* Color azul */
     color: white; /* Texto en blanco */
     border: none; /* Sin borde */
     padding: 15px 15px; /* Espaciado interno */
@@ -30,12 +30,12 @@ header {
 }
 
 #language-toggle:hover {
-    background-color: #eba12a; /* Azul más oscuro al pasar el mouse */
+    background-color: #2570d3; /* Azul más oscuro al pasar el mouse */
     transform: scale(1.05); /* Ligero aumento de tamaño */
 }
 
 #language-toggle:active {
-    background-color: #e69718; /* Azul aún más oscuro al hacer clic */
+    background-color: #3d88e9; /* Azul aún más oscuro al hacer clic */
     transform: scale(0.98); /* Efecto de presión */
 }
 
@@ -117,7 +117,7 @@ body {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     margin-top: 20px;
 }
 
@@ -231,8 +231,8 @@ nav ul li a {
 
 /* Hover en botones de navegación */
 nav ul li a:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    background-color: #154f8a;
+    box-shadow: 0px 4px 10px rgba(139, 139, 139, 0.2);
+    background-color: #2178ce;
 }
 
 /* Botones */
@@ -319,7 +319,7 @@ button:hover {
 @media (max-width: 768px) {
     nav ul {
         top: 5px;
-        right: 10px; /* Ajuste fino del margen derecho */
+        right: 11px; /* Ajuste fino del margen derecho */
         gap: 4px; /* Espacio reducido entre botones */
     }
 
@@ -327,6 +327,18 @@ button:hover {
         font-size: 12px;
         padding: 6px 10px;
         max-width: 110px; /* Ajuste del tamaño de los botones */
+    }
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 1px;
+        margin-top: 20px;
     }
 }
 
