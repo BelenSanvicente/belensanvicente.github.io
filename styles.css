@@ -289,9 +289,6 @@ button:hover {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
 
-    #nav-contact {
-        display: none; /* Ocultar todo el contenedor de la navegación */
-    }
     /* Mostrar solo los botones de CV e Idioma */
     nav ul {
         display: flex;
@@ -302,37 +299,30 @@ button:hover {
         margin: 0;
     }
 
-    nav ul li {
-        display: none; /* Ocultar todos los elementos de navegación */
-    }
+    
 
     /* Mostrar solo los botones de CV e Idioma */
     #cv-link, #language-toggle {
         display: block; /* Asegurarse de que solo estos botones estén visibles */
         font-size: 14px;
-        padding: 10px 15px;
+        padding: 10px 0; /* Solo padding vertical para que el tamaño sea consistente */
         background-color: #0c4b8a;
         color: white;
         text-decoration: none;
         border-radius: 5px;
         text-align: center;
         margin: 10px auto;
+        width: 80%; /* Igualar el tamaño de ambos botones */
+        max-width: 200px; /* Para evitar que los botones se vuelvan demasiado grandes en pantallas más anchas */
     }
-
+    
     /* Efecto hover para los botones */
     #cv-link:hover, #language-toggle:hover {
         background-color: #154f8a;
     }
+    
 
-    #language-toggle {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-
-    /* Ajuste de la tipografía de los enlaces */
-    #cv-link {
-        font-size: 16px;
-    }
+    
 }
 
 /* Para pantallas medianas (hasta 768px) */
