@@ -287,7 +287,7 @@ button:hover {
         display: flex;
         flex-direction: row; /* Mantener los botones en una sola línea */
         gap: 8px; /* Espaciado entre los botones */
-        align-items:normal; /* Alinear verticalmente */
+        display: inline-block;
         padding: 10px;
         margin: 0;
         position: absolute;
