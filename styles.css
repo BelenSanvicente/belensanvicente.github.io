@@ -279,49 +279,12 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.123);
 }
 
-@media screen and (max-width: 400px) {
-    header {
-        padding: 15px;
-    }
-
-    /* Reduce el tamaño de la fuente */
-    #title {
-        font-size: 24px;
-    }
-
-    .navigation {
-        font-size: 14px;
-    }
-
-    #language-toggle {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-}
-
 
         
 /* Responsividad */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
+    
    
-    .section-button {
-        padding: 20px;
-    }
 
 
     .project-container {
@@ -347,9 +310,6 @@ button:hover {
     }
 
 
-    nav ul {
-        gap: 10px;
-    }
 
 
     h2 {
@@ -370,5 +330,68 @@ button:hover {
 
     .project-image {
         height: 200px;
+    }
+}
+
+ /* Estilos para pantallas pequeñas (menos de 400px) */
+@media screen and (max-width: 400px) { 
+    header {
+        padding: 15px;
+        text-align: center; /* Centrar el contenido */
+    }
+
+    /* Reduce el tamaño de la fuente */
+    #title {
+        font-size: 24px;
+    }
+
+    /* Ajuste de la imagen de perfil */
+    .profile img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px; /* Espacio debajo de la imagen */
+    }
+
+    /* Ocultar navegación completa */
+    .navigation {
+        display: none;
+    }
+
+    /* Mostrar solo los botones de CV e Idioma */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center; /* Centrar los botones */
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    /* Estilos de los enlaces para el CV y el botón de idioma */
+    nav ul li a, #language-toggle {
+        font-size: 14px;
+        padding: 10px 15px;
+        background-color: #0c4b8a;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    /* Efecto hover para los botones */
+    nav ul li a:hover, #language-toggle:hover {
+        background-color: #154f8a;
+    }
+
+    #language-toggle {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    /* Ajuste de la tipografía de los enlaces */
+    nav ul li a {
+        font-size: 16px;
     }
 }
