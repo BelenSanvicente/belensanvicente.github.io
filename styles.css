@@ -177,7 +177,7 @@ body {
 
 .project-description {
     background-color: #f8f9fa;
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
     text-align: justify;
     font-size: 16px;
@@ -288,9 +288,7 @@ button:hover {
     #nav-projects {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
-    #nav-contact {
-        display: none; /* Ocultar todo el contenedor de la navegación */
-    }
+    
 
  /* Posicionar los botones en la esquina superior derecha */
 nav ul {
@@ -306,10 +304,10 @@ nav ul {
 }
 
 /* Estilos para los botones de CV e Idioma */
-#cv-link, #language-toggle {
+#cv-link, #language-toggle, #nav-contact {
     font-size: 14px;
-    padding: 8px 12px;
-    background-color: #0c4b8a;
+    padding: 9px 13px;
+    background-color: #124e8a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -320,7 +318,7 @@ nav ul {
 }
 
 /* Efecto hover para los botones */
-#cv-link:hover, #language-toggle:hover {
+#cv-link:hover, #language-toggle:hover,  #nav-contact {
     background-color: #154f8a;
 }
 
