@@ -278,7 +278,7 @@ button:hover {
     }
 
     /* Ocultar toda la navegación excepto los botones de CV e Idioma */
-    .navigation {
+    #nav-about {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
 
