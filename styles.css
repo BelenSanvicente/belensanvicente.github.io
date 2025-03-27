@@ -12,7 +12,7 @@ header {
     color:  #003366;
     text-align: center;
     padding: 20px 0;
-    text-shadow: 2px 2px 5px rgba(129, 129, 129, 0.5);
+    text-shadow: 2px 2px 5px rgba(146, 145, 145, 0.5);
 }
 
 /* idioma */
@@ -310,6 +310,7 @@ button:hover {
         text-align: center;
         width: auto;
         max-width: 140px; /* Reducir el tamaño para que ocupen menos espacio */
+        justify-content:space-between;
 }
 
 /* Efecto hover para los botones */
@@ -453,6 +454,7 @@ button:hover {
         text-align: center;
         width: auto;
         max-width: 140px; /* Reducir el tamaño para que ocupen menos espacio */
+        justify-content:space-between;
 }
 
 /* Efecto hover para los botones */
