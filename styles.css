@@ -292,36 +292,51 @@ button:hover {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
 
-    /* Mostrar solo los botones de CV e Idioma */
-    /* Mostrar solo los botones de CV e Idioma */
+ /* Posicionar los botones en la esquina superior derecha */
 nav ul {
     display: flex;
-    flex-direction: row; /* Cambiado a 'row' para que los botones estén en una sola línea */
+    flex-direction: row; /* Mantener en una sola línea */
     gap: 10px; /* Espaciado entre los botones */
-    align-items:normal; /* Centrar los botones verticalmente si es necesario */
-    padding: 0;
+    align-items: center; /* Alinear verticalmente */
+    padding: 10px;
     margin: 0;
-    position: relative;
-    
+    position: absolute;
+    top: 10px; /* Separación desde la parte superior */
+    right: 10px; /* Alinear a la derecha */
 }
 
-/* Estilos para los botones de CV, Idioma */
+/* Estilos para los botones de CV e Idioma */
 #cv-link, #language-toggle {
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     background-color: #0c4b8a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-    margin: 10px; /* Espacio entre los botones */
-    width: auto; /* Ajuste automático del ancho */
-    max-width: 200px; /* Evitar que los botones sean demasiado grandes */
+    margin: 0; /* Eliminar márgenes para que queden más compactos */
+    width: auto;
+    max-width: 150px; /* Reducir el tamaño para que ocupen menos espacio */
 }
 
 /* Efecto hover para los botones */
 #cv-link:hover, #language-toggle:hover {
     background-color: #154f8a;
+}
+
+/* Ajustes en dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        top: 5px;
+        right: 5px;
+        gap: 5px; /* Reducir espacio entre botones */
+    }
+
+    #cv-link, #language-toggle {
+        font-size: 12px;
+        padding: 6px 10px;
+        max-width: 120px; /* Reducir aún más el tamaño */
+    }
 }
 
 
