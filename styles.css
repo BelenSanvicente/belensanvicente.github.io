@@ -301,24 +301,36 @@ button:hover {
 
     
 
-    #cv-link, #language-toggle, #nav-contact{
-        display: block; /* Asegurarse de que solo estos botones estén visibles */
-        font-size: 14px;
-        padding: 10px 10 px; /* Un padding vertical de 12px para mayor espacio */
-        background-color: #0c4b8a;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        text-align: center;
-        margin: 20px auto; /* Aumentar el margen para evitar que se vea pequeño */
-        width: 80%; /* Igualar el tamaño de ambos botones */
-        max-width: 250px; /* Evitar que los botones sean demasiado grandes */
+    /* Estilos para los botones de CV, Idioma y Contacto */
+#cv-link, #language-toggle, #nav-contact { 
+    display: inline-block; /* Los botones se mostrarán en línea (horizontalmente) */
+    font-size: 14px;
+    padding: 10px 15px; /* Asegurando un padding adecuado para que el texto no quede pegado */
+    background-color: #0c4b8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 5px; /* Espacio entre los botones, puede ajustarse si es necesario */
+    width: auto; /* Permite que los botones se ajusten al contenido */
+    max-width: 250px; /* Para evitar que los botones se vuelvan demasiado grandes */
+}
+
+/* Efecto hover para los botones */
+#cv-link:hover, #language-toggle:hover, #nav-contact:hover {
+    background-color: #154f8a;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    nav ul {
+        display: flex;
+        justify-content: center; /* Centrar los botones */
+        gap: 10px; /* Espaciado entre los botones */
+        flex-wrap: wrap; /* Permitir que los botones se ajusten si es necesario */
     }
-    
-    /* Efecto hover para los botones */
-    #cv-link:hover, #language-toggle:hover, #nav-contact:hover {
-        background-color: #154f8a;
-    }
+}
+
 
     
 }
