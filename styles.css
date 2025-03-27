@@ -314,6 +314,7 @@ button:hover {
     margin: 10px 5px; /* Espacio entre los botones, puede ajustarse si es necesario */
     width: auto; /* Permite que los botones se ajusten al contenido */
     max-width: 250px; /* Para evitar que los botones se vuelvan demasiado grandes */
+    gap: 5px;
 }
 
 /* Efecto hover para los botones */
@@ -321,14 +322,7 @@ button:hover {
     background-color: #154f8a;
 }
 
-/* Responsividad para pantallas pequeñas */
-@media screen and (max-width: 480px) {
-    nav ul {
-        display: flex;
-        justify-content: center; /* Centrar los botones */
-        gap: 10px; /* Espaciado entre los botones */
-        flex-wrap: wrap; /* Permitir que los botones se ajusten si es necesario */
-    }
+
 }
 
 
