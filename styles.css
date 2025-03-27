@@ -288,7 +288,6 @@ button:hover {
     #nav-projects {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
-    
 /* Posicionar los botones en la esquina superior derecha */
 nav ul {
     display: flex;
@@ -304,6 +303,7 @@ nav ul {
 
 /* Estilos para los botones de CV, Idioma y Contacto */
 #cv-link, #language-toggle, #nav-contact {
+    display: inline-block; /* Asegurar que se muestren correctamente */
     font-size: 14px;
     padding: 8px 12px;
     background-color: #124e8a;
@@ -334,6 +334,7 @@ nav ul {
         max-width: 110px; /* Ajuste del tamaño de los botones */
     }
 }
+
 
 
 
