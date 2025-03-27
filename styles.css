@@ -297,12 +297,10 @@ button:hover {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        align-items: center; /* Centrar los botones */
+        align-items:baseline; 
         padding: 0;
         margin: 0;
     }
-
-    
 
     /* Estilos para los botones de CV, Idioma y Contacto */
     #cv-link, #language-toggle {
