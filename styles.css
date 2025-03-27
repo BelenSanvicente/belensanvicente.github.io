@@ -305,24 +305,29 @@ button:hover {
     cursor: pointer;
 }
 
-/* Responsividad */
+/* Estilos del menú en móviles */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el botón hamburguesa */
+    }
+
     nav ul {
-        display: none;
+        display: none; /* Ocultar el menú por defecto */
         flex-direction: column;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
         background-color: #333;
-        text-align: center;
+        padding: 15px;
     }
 
     nav ul.active {
-        display: flex;
+        display: flex; /* Mostrar cuando el usuario haga clic */
     }
 
-    .menu-toggle {
-        display: block;
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
     }
 }
