@@ -340,4 +340,40 @@ button:hover {
         font-size: 14px;
         padding: 8px 12px;
     }
+    #nav-about {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+
+    #nav-news {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+    #nav-projects {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+
+    /* Mostrar solo los botones de CV e Idioma */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center; /* Centrar los botones */
+        padding: 0;
+        margin: 0;
+    }
+
+    
+
+    /* Mostrar solo los botones de CV e Idioma */
+    #cv-link, #language-toggle, #nav-contact {
+        display: block; /* Asegurarse de que solo estos botones estén visibles */
+        font-size: 14px;
+        padding: 15px 15px;
+        background-color: #0c4b8a;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px auto;
+        
+    }
 }
