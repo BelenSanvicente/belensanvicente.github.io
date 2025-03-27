@@ -127,25 +127,6 @@ h2 {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Navegación fija */
 nav {
     position: fixed;
@@ -298,36 +279,63 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.123);
 }
 
-/* Menú hamburguesa (oculto en escritorio) */
+/* ---------------- */
+/* 🔹 MENÚ RESPONSIVO */
+/* ---------------- */
+
 .menu-toggle {
+    display: none; /* Oculto en escritorio */
+}
+
+/* Contenedor del menú */
+.navigation {
+    position: relative;
+}
+
+/* Checkbox oculto */
+#menu-toggle {
+    display: none;
+}
+
+/* Icono del menú (☰) */
+.menu-label {
     display: none;
     font-size: 30px;
     cursor: pointer;
+    user-select: none;
+    color: white;
 }
 
-/* Estilos del menú en móviles */
+/* ---------------- */
+/* 📱 MODO MÓVIL */
+/* ---------------- */
+
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostrar el botón hamburguesa */
+    /* Muestra el icono de menú */
+    .menu-label {
+        display: block;
     }
 
+    /* Oculta la lista de navegación por defecto */
     nav ul {
-        display: none; /* Ocultar el menú por defecto */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
-        background-color: #333;
-        padding: 15px;
-    }
-
-    nav ul.active {
-        display: flex; /* Mostrar cuando el usuario haga clic */
-    }
-
-    nav ul li {
+        background-color: #222;
         text-align: center;
+        padding: 15px 0;
+    }
+
+    /* Mostrar menú cuando el checkbox está marcado */
+    #menu-toggle:checked ~ nav ul {
+        display: flex;
+    }
+
+    /* Espaciado del menú */
+    nav ul li {
         padding: 10px 0;
     }
 }
