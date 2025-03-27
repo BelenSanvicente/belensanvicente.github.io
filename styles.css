@@ -289,36 +289,34 @@ button:hover {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
     
-
- /* Posicionar los botones en la esquina superior derecha */
+/* Posicionar los botones en la esquina superior derecha */
 nav ul {
     display: flex;
-    flex-direction: row; /* Mantener en una sola línea */
-    gap: 10px; /* Espaciado entre los botones */
+    flex-direction: row; /* Mantener los botones en una sola línea */
+    gap: 8px; /* Espaciado entre los botones */
     align-items: center; /* Alinear verticalmente */
     padding: 10px;
     margin: 0;
     position: absolute;
     top: 10px; /* Separación desde la parte superior */
-    right: 10px; /* Alinear a la derecha */
+    right: 15px; /* Pequeño margen a la derecha */
 }
 
-/* Estilos para los botones de CV e Idioma */
+/* Estilos para los botones de CV, Idioma y Contacto */
 #cv-link, #language-toggle, #nav-contact {
     font-size: 14px;
-    padding: 9px 13px;
+    padding: 8px 12px;
     background-color: #124e8a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-    margin:10px; /* Eliminar márgenes para que queden más compactos */
     width: auto;
-    max-width: 150px; /* Reducir el tamaño para que ocupen menos espacio */
+    max-width: 140px; /* Reducir el tamaño para que ocupen menos espacio */
 }
 
 /* Efecto hover para los botones */
-#cv-link:hover, #language-toggle:hover,  #nav-contact {
+#cv-link:hover, #language-toggle:hover, #nav-contact:hover {
     background-color: #154f8a;
 }
 
@@ -326,16 +324,17 @@ nav ul {
 @media (max-width: 768px) {
     nav ul {
         top: 5px;
-        right: 5px;
-        gap: 5px; /* Reducir espacio entre botones */
+        right: 10px; /* Ajuste fino del margen derecho */
+        gap: 4px; /* Espacio reducido entre botones */
     }
 
-    #cv-link, #language-toggle {
-        font-size: 14px;
-        padding: 6px auto;
-        max-width: 130px; /* Reducir aún más el tamaño */
+    #cv-link, #language-toggle, #nav-contact {
+        font-size: 12px;
+        padding: 6px 10px;
+        max-width: 110px; /* Ajuste del tamaño de los botones */
     }
 }
+
 
 
 }
