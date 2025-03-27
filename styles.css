@@ -282,6 +282,16 @@ button:hover {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
 
+    #nav-news {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+    #nav-projects {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+
+    #nav-contact {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
     /* Mostrar solo los botones de CV e Idioma */
     nav ul {
         display: flex;
