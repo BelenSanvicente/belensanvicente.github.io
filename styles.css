@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(50deg,  #0055a4, #e9eff5);
+    background: linear-gradient(40deg,  #124e8a, #eef6fa);
     color: #333;
 }
 
@@ -481,7 +481,25 @@ button:hover {
         margin-top: 20px;
     }
 }
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Asegura que estén en línea */
+        justify-content: center; /* Centra los botones horizontalmente */
+        align-items: center; /* Alineación vertical */
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        gap: 10px; /* Espacio entre botones */
+    }
 
+    #cv-link, #language-toggle, #nav-contact {
+        font-size: 12px;
+        padding: 6px 10px;
+        max-width: 110px;
+    }
+}
 
     
 }
