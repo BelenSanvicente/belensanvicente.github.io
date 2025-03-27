@@ -298,10 +298,10 @@ nav ul {
     display: flex;
     flex-direction: row; /* Cambiado a 'row' para que los botones estén en una sola línea */
     gap: 10px; /* Espaciado entre los botones */
-    align-items: center; /* Centrar los botones verticalmente si es necesario */
+    align-items:normal; /* Centrar los botones verticalmente si es necesario */
     padding: 0;
     margin: 0;
-    justify-content: center; /* Centrar los botones horizontalmente */
+    
 }
 
 /* Estilos para los botones de CV, Idioma */
