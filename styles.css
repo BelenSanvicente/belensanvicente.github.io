@@ -395,7 +395,93 @@ button:hover {
         margin: 0;
     }
 
-    
+    header {
+        padding: 15px;
+        text-align: center; /* Centrar el contenido */
+    }
+
+    /* Reduce el tamaño de la fuente */
+    #title {
+        font-size: 24px;
+    }
+
+    /* Ajuste de la imagen de perfil */
+    .profile img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px; /* Espacio debajo de la imagen */
+    }
+
+    /* Ocultar toda la navegación excepto los botones de CV e Idioma */
+    #nav-about {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+
+    #nav-news {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+    #nav-projects {
+        display: none; /* Ocultar todo el contenedor de la navegación */
+    }
+/* Posicionar los botones en la esquina superior derecha */
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Mantener los botones en una sola línea */
+        gap: 8px; /* Espaciado entre los botones */
+        align-items:normal; /* Alinear verticalmente */
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        top: 10px; /* Separación desde la parte superior */
+        right: 18px; /* Pequeño margen a la derecha */
+}
+
+/* Estilos para los botones de CV, Idioma y Contacto */
+    #cv-link, #language-toggle, #nav-contact {
+        display: inline-block; /* Asegurar que se muestren correctamente */
+        font-size: 14px;
+        padding: 8px 12px;
+        background-color: #124e8a;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        width: auto;
+        max-width: 140px; /* Reducir el tamaño para que ocupen menos espacio */
+}
+
+/* Efecto hover para los botones */
+#cv-link:hover, #language-toggle:hover, #nav-contact:hover {
+    background-color: #5d86af;
+}
+
+/* Ajustes en dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        top: 5px;
+        right: 11px; /* Ajuste fino del margen derecho */
+        gap: 4px; /* Espacio reducido entre botones */
+    }
+
+    #cv-link, #language-toggle, #nav-contact {
+        font-size: 12px;
+        padding: 6px 10px;
+        max-width: 110px; /* Ajuste del tamaño de los botones */
+    }
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 1px;
+        margin-top: 20px;
+    }
+}
+
 
     
 }
