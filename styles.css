@@ -301,7 +301,7 @@ button:hover {
 
     
 
-    #cv-link, #language-toggle, #nav-contact {
+    #cv-link, #language-toggle  {
         display: inline-block; /* Los botones estarán en una línea */
         font-size: 14px;
         padding: 15px 15px;
@@ -317,7 +317,7 @@ button:hover {
     /* Responsividad para pantallas pequeñas (menos de 400px) */
     @media screen and (max-width: 400px) {
         /* Alineación de los botones en una sola fila */
-        #cv-link, #language-toggle, #nav-contact {
+        #cv-link, #language-toggle {
             width: 45%; /* Ajuste del ancho para caber en una sola línea */
             margin: 10px 2.5%; /* Espacio entre los botones */
         }
