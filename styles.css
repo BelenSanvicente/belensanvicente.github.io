@@ -278,64 +278,49 @@ button {
 button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.123);
 }
-
-/* ---------------- */
-/* 🔹 MENÚ RESPONSIVO */
-/* ---------------- */
-
-.menu-toggle {
-    display: none; /* Oculto en escritorio */
-}
-
-/* Contenedor del menú */
-.navigation {
-    position: relative;
-}
-
-/* Checkbox oculto */
-#menu-toggle {
-    display: none;
-}
-
-/* Icono del menú (☰) */
-.menu-label {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    user-select: none;
-    color: white;
-}
-
-/* ---------------- */
-/* 📱 MODO MÓVIL */
-/* ---------------- */
-
 @media (max-width: 768px) {
-    /* Muestra el icono de menú */
-    .menu-label {
-        display: block;
+    /* Encabezado ajustado para pantallas pequeñas */
+    header {
+        padding: 15px 0; /* Menos padding */
     }
 
-    /* Oculta la lista de navegación por defecto */
+    /* Estilo del botón de idioma en móviles */
+    #language-toggle {
+        font-size: 12px; /* Reduce el tamaño del texto */
+        padding: 6px 12px; /* Ajuste del tamaño del botón */
+        margin-top: 10px; /* Espaciado en la parte superior */
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Centrado en pantallas pequeñas */
+    }
+
+    /* Ajuste de la navegación */
     nav ul {
-        display: none;
+        display: none; /* Oculta la navegación por defecto */
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 50px; /* Ajuste el top para que el menú no se superponga */
         left: 0;
         width: 100%;
-        background-color: #222;
+        background-color: #003366; /* Fondo del menú */
         text-align: center;
         padding: 15px 0;
     }
 
-    /* Mostrar menú cuando el checkbox está marcado */
+    /* Muestra el menú cuando el checkbox está marcado */
     #menu-toggle:checked ~ nav ul {
         display: flex;
     }
 
-    /* Espaciado del menú */
-    nav ul li {
-        padding: 10px 0;
+    /* Cambiar el color de los enlaces en móviles */
+    nav ul li a {
+        font-size: 16px;
+        padding: 12px 20px; /* Más espacio para el texto */
+    }
+
+    /* Asegurarse de que el logo o cualquier imagen se ajuste bien */
+    header img {
+        width: 100%;
+        max-width: 120px; /* Controla el tamaño en móvil */
     }
 }
