@@ -3,14 +3,13 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(50deg, #003366, #0055a4);
+    background: linear-gradient(50deg,  #0055a4, #e9eff5);
     color: #333;
 }
 
 /* Estilos del encabezado */
 header {
-    
-    color: white;
+    color:  #003366;
     text-align: center;
     padding: 20px 0;
 }
@@ -18,7 +17,7 @@ header {
 /* idioma */
 
 #language-toggle {
-    background-color:  #1273f3;/* Color azul */
+    background-color:  #e28f09;;/* Color azul */
     color: white; /* Texto en blanco */
     border: none; /* Sin borde */
     padding: 15px 15px; /* Espaciado interno */
@@ -90,7 +89,7 @@ h2 {
 
 #institution {
     font-size: 16px;
-    color: #f39c12;
+    color: #e28f09;
     text-decoration: none;
     font-weight: bold;
 }
