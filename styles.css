@@ -280,22 +280,15 @@ button:hover {
 }
 
 
-        
-/* Responsividad */
+ /* Responsividad */
 @media (max-width: 768px) {
-    
-   
-
-
     .project-container {
         padding: 15px;
     }
 
-
     .project-text {
         font-size: 16px;
     }
-
 
     .project-image {
         max-width: 100%;
@@ -303,37 +296,30 @@ button:hover {
     }
 }
 
-
 @media (max-width: 480px) {
     header {
         padding: 15px 0;
     }
 
-
-
-
     h2 {
         font-size: 22px;
     }
-
 
     .project-text {
         font-size: 15px;
         line-height: 1.5;
     }
 
-
     .project-container {
         padding: 10px;
     }
-
 
     .project-image {
         height: 200px;
     }
 }
 
- /* Estilos para pantallas pequeñas (menos de 400px) */
+/* Estilos para pantallas pequeñas (menos de 400px) */
 @media screen and (max-width: 400px) { 
     header {
         padding: 15px;
@@ -366,11 +352,12 @@ button:hover {
     }
 
     nav ul li {
-        display: inline;
+        display: none; /* Ocultar todos los elementos del menú */
     }
 
-    /* Estilos de los enlaces para el CV y el botón de idioma */
-    nav ul li a, #language-toggle {
+    /* Mostrar solo los botones de CV e Idioma */
+    #cv-link, #language-toggle {
+        display: block; /* Asegurarse de que solo estos botones estén visibles */
         font-size: 14px;
         padding: 10px 15px;
         background-color: #0c4b8a;
@@ -378,10 +365,11 @@ button:hover {
         text-decoration: none;
         border-radius: 5px;
         text-align: center;
+        margin: 10px auto;
     }
 
     /* Efecto hover para los botones */
-    nav ul li a:hover, #language-toggle:hover {
+    #cv-link:hover, #language-toggle:hover {
         background-color: #154f8a;
     }
 
@@ -391,7 +379,7 @@ button:hover {
     }
 
     /* Ajuste de la tipografía de los enlaces */
-    nav ul li a {
+    #cv-link {
         font-size: 16px;
     }
 }
