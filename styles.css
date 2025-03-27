@@ -301,26 +301,24 @@ button:hover {
 
     
 
-    #cv-link, #language-toggle  {
-        display: inline-block; /* Los botones estarán en una línea */
+    #cv-link, #language-toggle, #nav-contact{
+        display: block; /* Asegurarse de que solo estos botones estén visibles */
         font-size: 14px;
-        padding: 15px 15px;
+        padding: 10px 10 px; /* Un padding vertical de 12px para mayor espacio */
         background-color: #0c4b8a;
         color: white;
         text-decoration: none;
         border-radius: 5px;
         text-align: center;
-        margin: 10px; /* Espaciado entre los botones */
-        width: auto; /* Evitar que los botones se expandan demasiado */
+        margin: 20px auto; /* Aumentar el margen para evitar que se vea pequeño */
+        width: 80%; /* Igualar el tamaño de ambos botones */
+        max-width: 250px; /* Evitar que los botones sean demasiado grandes */
     }
     
-    /* Responsividad para pantallas pequeñas (menos de 400px) */
-    @media screen and (max-width: 400px) {
-        /* Alineación de los botones en una sola fila */
-        #cv-link, #language-toggle {
-            width: 45%; /* Ajuste del ancho para caber en una sola línea */
-            margin: 10px 2.5%; /* Espacio entre los botones */
-        }
+    /* Efecto hover para los botones */
+    #cv-link:hover, #language-toggle:hover, #nav-contact:hover {
+        background-color: #154f8a;
+    }
 
     
 }
