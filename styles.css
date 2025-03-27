@@ -182,9 +182,8 @@ body {
     text-align: justify;
     font-size: 16px;
     line-height: 1.6;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .project-t {
     text-align: center;
@@ -192,10 +191,6 @@ body {
     font-size: 18px;
     line-height: 1.6;
 }
-
-
-
-
 
 /* Navegación fija */
 nav {
@@ -289,35 +284,35 @@ button:hover {
         display: none; /* Ocultar todo el contenedor de la navegación */
     }
 /* Posicionar los botones en la esquina superior derecha */
-nav ul {
-    display: flex;
-    flex-direction: row; /* Mantener los botones en una sola línea */
-    gap: 8px; /* Espaciado entre los botones */
-    align-items: center; /* Alinear verticalmente */
-    padding: 10px;
-    margin: 0;
-    position: absolute;
-    top: 10px; /* Separación desde la parte superior */
-    right: 15px; /* Pequeño margen a la derecha */
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Mantener los botones en una sola línea */
+        gap: 8px; /* Espaciado entre los botones */
+        align-items:normal; /* Alinear verticalmente */
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        top: 10px; /* Separación desde la parte superior */
+        right: 15px; /* Pequeño margen a la derecha */
 }
 
 /* Estilos para los botones de CV, Idioma y Contacto */
-#cv-link, #language-toggle, #nav-contact {
-    display: inline-block; /* Asegurar que se muestren correctamente */
-    font-size: 14px;
-    padding: 8px 12px;
-    background-color: #124e8a;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    width: auto;
-    max-width: 140px; /* Reducir el tamaño para que ocupen menos espacio */
+    #cv-link, #language-toggle, #nav-contact {
+        display: inline-block; /* Asegurar que se muestren correctamente */
+        font-size: 14px;
+        padding: 8px 12px;
+        background-color: #124e8a;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        width: auto;
+        max-width: 140px; /* Reducir el tamaño para que ocupen menos espacio */
 }
 
 /* Efecto hover para los botones */
 #cv-link:hover, #language-toggle:hover, #nav-contact:hover {
-    background-color: #154f8a;
+    background-color: #5d86af;
 }
 
 /* Ajustes en dispositivos móviles */
