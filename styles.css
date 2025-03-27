@@ -12,6 +12,7 @@ header {
     color:  #003366;
     text-align: center;
     padding: 20px 0;
+    text-shadow: 2px 2px 5px rgba(129, 129, 129, 0.5);
 }
 
 /* idioma */
@@ -85,6 +86,7 @@ h2 {
     border-bottom: 2px solid #003366;
     padding-bottom: 5px;
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(129, 129, 129, 0.5);
 }
 
 #institution {
@@ -92,6 +94,7 @@ h2 {
     color: #e28f09;
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(129, 129, 129, 0.5);
 }
 
 #institution:hover {
@@ -434,11 +437,13 @@ button:hover {
         position: absolute;
         top: 10px; /* Separación desde la parte superior */
         right: 18px; /* Pequeño margen a la derecha */
+        justify-content: space-between;
+
 }
 
 /* Estilos para los botones de CV, Idioma y Contacto */
     #cv-link, #language-toggle, #nav-contact {
-        display: inline-block; /* Asegurar que se muestren correctamente */
+        display: flex; /* Asegurar que se muestren correctamente */
         font-size: 14px;
         padding: 8px 12px;
         background-color: #124e8a;
@@ -480,6 +485,23 @@ button:hover {
         padding: 1px;
         margin-top: 20px;
     }
+    #cv-link, #language-toggle, #nav-contact {
+        display: flex; /* Asegurar que se muestren correctamente */
+        font-size: 14px;
+        padding: 8px 12px;
+        background-color: #124e8a;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        width: auto;
+        max-width: 140px; /* Reducir el tamaño para que ocupen menos espacio */
+}
+
+/* Efecto hover para los botones */
+    #cv-link:hover, #language-toggle:hover, #nav-contact:hover {
+        background-color: #5d86af;
+}
 }
 @media screen and (max-width: 768px) and (orientation: landscape) {
     nav ul {
