@@ -1,16 +1,9 @@
-let app = document.getElementById('typewriter');
- 
-let typewriter = new Typewriter(app, {
-  loop: true,
-  delay: 72,
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    });
 });
-
-
-typewriter
-  .pauseFor(1000)
-  .typeString('Soy estudiante de Física Biomédica y programadora.')
-  .pauseFor(200)
-  .deleteChars(5)
-  .start();
-
  
